@@ -2,22 +2,11 @@
 <diagram program="umlet" version="15.1">
   <zoom_level>11</zoom_level>
   <element>
-    <id>UMLActor</id>
-    <coordinates>
-      <x>1254</x>
-      <y>396</y>
-      <w>132</w>
-      <h>121</h>
-    </coordinates>
-    <panel_attributes>New Customer</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>462</x>
-      <y>88</y>
-      <w>550</w>
+      <x>517</x>
+      <y>132</y>
+      <w>385</w>
       <h>649</h>
     </coordinates>
     <panel_attributes>System
@@ -27,8 +16,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>649</x>
-      <y>286</y>
+      <x>638</x>
+      <y>440</y>
       <w>143</w>
       <h>55</h>
     </coordinates>
@@ -38,8 +27,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>297</x>
-      <y>198</y>
+      <x>341</x>
+      <y>242</y>
       <w>66</w>
       <h>121</h>
     </coordinates>
@@ -50,99 +39,11 @@ halign=left</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>649</x>
-      <y>429</y>
+      <y>671</y>
       <w>132</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>Location code</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>638</x>
-      <y>495</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Leasing and Recall</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLActor</id>
-    <coordinates>
-      <x>286</x>
-      <y>451</y>
-      <w>88</w>
-      <h>121</h>
-    </coordinates>
-    <panel_attributes>Manager</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>638</x>
-      <y>374</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Storage management</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>627</x>
-      <y>550</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Bookkeeping</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>638</x>
-      <y>110</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Sales</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>660</x>
-      <y>165</y>
-      <w>132</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>CRUD Products</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>660</x>
-      <y>231</y>
-      <w>132</w>
-      <h>55</h>
-    </coordinates>
-    <panel_attributes>CRUD Customer</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLActor</id>
-    <coordinates>
-      <x>1056</x>
-      <y>385</y>
-      <w>110</w>
-      <h>121</h>
-    </coordinates>
-    <panel_attributes>Contractors</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -153,180 +54,337 @@ halign=left</panel_attributes>
       <w>165</w>
       <h>44</h>
     </coordinates>
-    <panel_attributes>Sales Statistics</panel_attributes>
+    <panel_attributes>Leasing and Recall</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLNote</id>
+    <id>UMLActor</id>
     <coordinates>
-      <x>484</x>
-      <y>781</y>
-      <w>473</w>
-      <h>165</h>
+      <x>330</x>
+      <y>517</y>
+      <w>88</w>
+      <h>121</h>
     </coordinates>
-    <panel_attributes>Hvad skal vi kalde denne Use Case?
-- Systemet skal gøre det muligt at foretage 
-  registrering af alt fra afgivelse af tilbud 
-  til produktet er faktureret. Dvs. at der skal 
-  være mulighed for at afgive tilbud, afgive en 
-  ordre, ordrebekræftelse, forsendelsesnota, følgeseddel og faktura.
-bg=blue</panel_attributes>
+    <panel_attributes>Manager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1166</x>
-      <y>770</y>
+      <x>627</x>
+      <y>506</y>
       <w>165</w>
       <h>44</h>
     </coordinates>
-    <panel_attributes>XL-Byg Integration</panel_attributes>
+    <panel_attributes>Storage management</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>627</x>
+      <y>561</y>
+      <w>165</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Bookkeeping</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>638</x>
+      <y>143</y>
+      <w>154</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Sales</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>649</x>
+      <y>319</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>CRUD Products</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>649</x>
+      <y>385</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>CRUD Customer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>627</x>
+      <y>726</y>
+      <w>165</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Sales Statistics</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>121</y>
-      <w>308</w>
-      <h>132</h>
+      <x>396</x>
+      <y>154</y>
+      <w>264</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;100.0;260.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;220.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>176</y>
-      <w>330</w>
-      <h>77</h>
+      <x>396</x>
+      <y>264</y>
+      <w>275</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;50.0;280.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;230.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>330</w>
-      <h>55</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;280.0;30.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>319</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;270.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>308</w>
-      <h>198</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;260.0;160.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>319</w>
-      <h>253</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;270.0;210.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>308</w>
-      <h>319</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;260.0;270.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>220</y>
-      <w>308</w>
-      <h>363</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;260.0;310.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>495</y>
-      <w>297</w>
+      <x>396</x>
+      <y>264</y>
+      <w>275</w>
       <h>165</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;250.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;230.0;130.0</additional_attributes>
   </element>
   <element>
-    <id>UMLActor</id>
+    <id>Relation</id>
     <coordinates>
-      <x>1155</x>
-      <y>198</y>
-      <w>88</w>
-      <h>121</h>
+      <x>396</x>
+      <y>264</y>
+      <w>264</w>
+      <h>220</h>
     </coordinates>
-    <panel_attributes>Customer</panel_attributes>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;220.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>264</y>
+      <w>253</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;210.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>264</y>
+      <w>275</w>
+      <h>451</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;230.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>264</y>
+      <w>253</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;210.0;340.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>264</y>
+      <w>264</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;220.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>561</y>
+      <w>253</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;210.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>638</x>
+      <y>198</y>
+      <w>154</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Ordering of Product</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>638</x>
+      <y>264</y>
+      <w>154</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Return Products</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1122</x>
-      <y>308</y>
-      <w>88</w>
-      <h>99</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;70.0;60.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1199</x>
-      <y>308</y>
-      <w>121</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>90.0;80.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1133</x>
-      <y>825</y>
-      <w>231</w>
+      <x>396</x>
+      <y>220</y>
+      <w>264</w>
       <h>77</h>
     </coordinates>
-    <panel_attributes>Det er en handling i systemet, 
-men hvor skal pilen fører hen?
-bg=blue</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes/>
+    <additional_attributes>220.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>253</y>
+      <w>264</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;220.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>154</y>
+      <w>264</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;380.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>220</y>
+      <w>264</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;320.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>275</y>
+      <w>264</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;270.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>330</y>
+      <w>275</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;220.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>396</y>
+      <w>275</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;160.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>451</y>
+      <w>264</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;110.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>517</y>
+      <w>253</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;50.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>550</y>
+      <w>253</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;210.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>561</y>
+      <w>253</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;210.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>561</y>
+      <w>275</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;230.0;120.0</additional_attributes>
   </element>
 </diagram>
