@@ -39,11 +39,11 @@ halign=left</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>616</x>
-      <y>528</y>
+      <y>517</y>
       <w>165</w>
       <h>44</h>
     </coordinates>
-    <panel_attributes>Leasing and Recall</panel_attributes>
+    <panel_attributes>Leasing</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -184,10 +184,10 @@ halign=left</panel_attributes>
       <x>385</x>
       <y>220</y>
       <w>253</w>
-      <h>352</h>
+      <h>341</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;210.0;300.0</additional_attributes>
+    <additional_attributes>10.0;10.0;210.0;290.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -336,12 +336,12 @@ halign=left</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>385</x>
-      <y>517</y>
+      <y>506</y>
       <w>253</w>
       <h>55</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;210.0;30.0</additional_attributes>
+    <additional_attributes>10.0;20.0;210.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
