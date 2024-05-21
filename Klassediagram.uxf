@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>330</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Manager
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1166</x>
+      <y>638</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>ComplexProduct
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>836</x>
+      <y>638</y>
+      <w>264</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SimpleProduct
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1012</x>
+      <y>506</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>132</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>CommercialCustomer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>539</x>
+      <y>264</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>275</x>
+      <y>187</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SalesEmployee
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>220</y>
+      <w>66</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>330</y>
+      <w>121</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1056</x>
+      <y>583</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1188</x>
+      <y>583</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>264</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1199</x>
+      <y>209</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1012</x>
+      <y>396</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>OrderLine
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>396</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Storage
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>737</x>
+      <y>396</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>737</x>
+      <y>33</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Supplier
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>858</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>PLACEHOLDER
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1265</x>
+      <y>396</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Leasing
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1254</x>
+      <y>506</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Location
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>726</x>
+      <y>143</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SupplyOrder
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>484</x>
+      <y>66</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SupplyOrderLine
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1276</x>
+      <y>264</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Discount
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>759</x>
+      <y>517</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Price
+--
+value
+date
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
