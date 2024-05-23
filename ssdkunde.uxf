@@ -4,277 +4,165 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>450</x>
-      <y>0</y>
-      <w>72</w>
+      <x>45</x>
+      <y>54</y>
+      <w>90</w>
       <h>99</h>
     </coordinates>
-    <panel_attributes>Employee</panel_attributes>
+    <panel_attributes>: Employee</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>477</x>
-      <y>99</y>
+      <x>81</x>
+      <y>135</y>
       <w>27</w>
-      <h>693</h>
+      <h>468</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;750.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;500.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>702</x>
-      <y>27</y>
+      <x>306</x>
+      <y>117</y>
       <w>90</w>
-      <h>54</h>
+      <h>27</h>
     </coordinates>
-    <panel_attributes>System
+    <panel_attributes>:System
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>738</x>
-      <y>90</y>
+      <x>342</x>
+      <y>135</y>
       <w>27</w>
-      <h>711</h>
+      <h>468</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;770.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;500.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>90</y>
-      <w>153</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Receives Order
-lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>108</y>
+      <x>81</x>
+      <y>216</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Search Product(s)
-lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>findProductBySerialNo(serialNo)
+lt=&lt;-</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>477</x>
-      <y>144</y>
+      <x>81</x>
+      <y>261</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Product price, location, quantity
-lt=&lt;&lt;&lt;.</panel_attributes>
+    <panel_attributes>name, price, location, quantity
+lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLFrame</id>
     <coordinates>
-      <x>477</x>
-      <y>279</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Choose product(s) to the order
-lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>459</x>
-      <y>315</y>
-      <w>324</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Product names, quantity, price each category, total price
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>30.0;20.0;320.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>342</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Confirms order
-lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>450</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Reserve product(s)
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>495</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Customer confirms
-lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>531</y>
-      <w>297</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Invoice is sent
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>360</x>
-      <y>567</y>
-      <w>144</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Invoice to customer
-lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
-      <y>702</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Finalize sale
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>297</x>
-      <y>369</y>
-      <w>531</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>Alternative
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>477</x>
+      <x>45</x>
       <y>207</y>
-      <w>297</w>
-      <h>36</h>
+      <w>351</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>Products in stock
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
+    <panel_attributes>loop</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>477</x>
-      <y>234</y>
-      <w>297</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Products not in stock
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>738</x>
-      <y>270</y>
+      <x>81</x>
+      <y>306</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Products not in stock ordered from supplier
-lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>addProduct(product, quantity)
+lt=&lt;-</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLPackage</id>
+    <id>Relation</id>
     <coordinates>
-      <x>414</x>
-      <y>189</y>
-      <w>612</w>
-      <h>117</h>
+      <x>81</x>
+      <y>351</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>Alternative
---
-</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>confirmation
+lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>477</x>
-      <y>405</y>
-      <w>297</w>
+      <x>81</x>
+      <y>396</y>
+      <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Cancels order
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
+    <panel_attributes>findCustomerByPhoneNo(phoneNo)
+lt=&lt;-</panel_attributes>
+    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>630</y>
-      <w>396</w>
+      <x>81</x>
+      <y>441</y>
+      <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Invoice reminder to customer
-lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;20.0;420.0;20.0</additional_attributes>
+    <panel_attributes>customer information
+lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLPackage</id>
+    <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>603</y>
-      <w>423</w>
-      <h>72</h>
+      <x>81</x>
+      <y>486</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>Alternative
---
-</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>finishSale()
+lt=&lt;-</panel_attributes>
+    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>81</x>
+      <y>171</y>
+      <w>288</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>createSale()
+lt=&lt;-</panel_attributes>
+    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>81</x>
+      <y>531</y>
+      <w>288</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>confirmation
+lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
 </diagram>
