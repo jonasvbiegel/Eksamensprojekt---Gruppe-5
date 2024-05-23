@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>14</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>60</y>
-      <w>100</w>
-      <h>30</h>
+      <x>742</x>
+      <y>112</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>SaleUI</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>300</y>
-      <w>130</w>
-      <h>30</h>
+      <x>392</x>
+      <y>448</y>
+      <w>182</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>ProductContainer</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>200</y>
-      <w>160</w>
-      <h>30</h>
+      <x>938</x>
+      <y>308</y>
+      <w>224</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>CustomerController</panel_attributes>
     <additional_attributes/>
@@ -37,10 +37,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>200</y>
-      <w>140</w>
-      <h>30</h>
+      <x>462</x>
+      <y>308</y>
+      <w>196</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>ProductController</panel_attributes>
     <additional_attributes/>
@@ -48,10 +48,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>290</y>
-      <w>170</w>
-      <h>30</h>
+      <x>980</x>
+      <y>434</y>
+      <w>238</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>CustomerContainer</panel_attributes>
     <additional_attributes/>
@@ -59,71 +59,71 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>80</y>
-      <w>270</w>
-      <h>140</h>
+      <x>448</x>
+      <y>140</y>
+      <w>462</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.1: p = findProductBySerialNo(serialNo)</panel_attributes>
-    <additional_attributes>60.0;120.0;200.0;10.0</additional_attributes>
+1.1: p = findProductBySerialNo(serialNo): Product</panel_attributes>
+    <additional_attributes>90.0;120.0;230.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>60</y>
-      <w>260</w>
-      <h>40</h>
+      <x>0</x>
+      <y>112</y>
+      <w>770</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1: createNewSale()</panel_attributes>
-    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+1: &lt;&lt;create&gt;&gt; createNewSale(c: Customer, products: ArrayList&lt;Product&gt;): Sale</panel_attributes>
+    <additional_attributes>530.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>80</y>
-      <w>350</w>
-      <h>140</h>
+      <x>840</x>
+      <y>140</y>
+      <w>588</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.2: c = findCustomerByPhoneNo(phoneNo)
+1.2: c = findCustomerByPhoneNo(phoneNo): Customer
 </panel_attributes>
     <additional_attributes>110.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>220</y>
-      <w>290</w>
-      <h>100</h>
+      <x>504</x>
+      <y>336</y>
+      <w>490</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.1.1: p = findProductBySerialNo(serialNo)</panel_attributes>
+1.1.1: p = findProductBySerialNo(serialNo): Product</panel_attributes>
     <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>130</x>
-      <y>320</y>
-      <w>200</w>
-      <h>90</h>
+      <x>476</x>
+      <y>476</y>
+      <w>364</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.1.1.1: *[=1..n] getProduct()</panel_attributes>
+1.1.1.1: *[=1..n] getProduct(): Product</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>390</y>
-      <w>100</w>
-      <h>50</h>
+      <x>420</x>
+      <y>574</y>
+      <w>140</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>products[i]:
 Product</panel_attributes>
@@ -132,34 +132,34 @@ Product</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>220</y>
-      <w>310</w>
-      <h>90</h>
+      <x>1092</x>
+      <y>336</y>
+      <w>532</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.2.1 c = findCustomerByPhoneNo(phoneNo)</panel_attributes>
+1.2.1 c = findCustomerByPhoneNo(phoneNo): Customer</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>310</y>
-      <w>220</w>
-      <h>90</h>
+      <x>1078</x>
+      <y>462</y>
+      <w>406</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.2.1.1: *[=1..n] getCustomer()</panel_attributes>
+1.2.1.1: *[=1..n] getCustomer(): Customer</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>380</y>
-      <w>100</w>
-      <h>50</h>
+      <x>1050</x>
+      <y>560</y>
+      <w>140</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>customers[i]:
 Customer</panel_attributes>
@@ -168,22 +168,22 @@ Customer</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
-      <y>60</y>
-      <w>550</w>
-      <h>90</h>
+      <x>868</x>
+      <y>112</y>
+      <w>798</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.3: s = createNewSale()</panel_attributes>
+1.3:s s = &lt;&lt;create&gt;&gt; createNewSale(c: Customer, products: ArrayList&lt;Product&gt;): Sale</panel_attributes>
     <additional_attributes>530.0;70.0;530.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>130</y>
-      <w>150</w>
-      <h>30</h>
+      <x>1540</x>
+      <y>210</y>
+      <w>210</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>SaleController</panel_attributes>
     <additional_attributes/>
@@ -191,22 +191,22 @@ Customer</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>950</x>
-      <y>150</y>
-      <w>270</w>
-      <h>110</h>
+      <x>1736</x>
+      <y>196</y>
+      <w>812</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.4 s = createNewSale()</panel_attributes>
-    <additional_attributes>250.0;90.0;10.0;10.0</additional_attributes>
+1.4: addSale(s): boolean</panel_attributes>
+    <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1130</x>
-      <y>240</y>
-      <w>150</w>
-      <h>30</h>
+      <x>2520</x>
+      <y>196</y>
+      <w>210</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>SaleContainer</panel_attributes>
     <additional_attributes/>
@@ -214,10 +214,10 @@ Customer</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
-      <y>360</y>
-      <w>100</w>
-      <h>50</h>
+      <x>2548</x>
+      <y>392</y>
+      <w>140</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>sales[i]:
 Sale</panel_attributes>
@@ -226,22 +226,22 @@ Sale</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1190</x>
-      <y>260</y>
-      <w>160</w>
-      <h>120</h>
+      <x>2604</x>
+      <y>224</y>
+      <w>266</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.4.1: addProduct(p)</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+1.4.1: addSale(s): boolean</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>340</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1540</x>
+      <y>504</y>
+      <w>140</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Sale</panel_attributes>
     <additional_attributes/>
@@ -249,14 +249,13 @@ Sale</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
-      <y>150</y>
-      <w>160</w>
-      <h>210</h>
+      <x>1596</x>
+      <y>238</y>
+      <w>756</w>
+      <h>294</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-1.3.1 addProduct()
-1.3.2 addCustomer()</panel_attributes>
+1.3 s = &lt;&lt;create&gt;&gt; createNewSale(c: Customer, products: ArrayList&lt;Product&gt;): Sale</panel_attributes>
     <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
