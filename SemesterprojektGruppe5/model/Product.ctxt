@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Product
+comment1.params=name\ serialNo
+comment1.target=Product(java.lang.String,\ java.lang.String)
+numComments=2
