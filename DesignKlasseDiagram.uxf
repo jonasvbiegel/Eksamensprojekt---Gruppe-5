@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>16</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>928</x>
-      <y>1504</y>
-      <w>848</w>
-      <h>464</h>
+      <x>759</x>
+      <y>1034</y>
+      <w>583</w>
+      <h>319</h>
     </coordinates>
     <panel_attributes>Customer
+bg=yellow
 --
 - name: String
 - address: String
@@ -27,18 +28,20 @@
 + setAddress(address: String)
 + setPhoneNo(phoneNo: String)
 + setCustomerNo(customerNo: String)
-+ setEmail(email: String)</panel_attributes>
++ setEmail(email: String)
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1104</x>
-      <y>2048</y>
-      <w>464</w>
-      <h>160</h>
+      <x>880</x>
+      <y>1408</y>
+      <w>319</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>CommercialCustomer
+bg=yellow
 --
 - cvr: String
 --
@@ -50,10 +53,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1344</x>
-      <y>1952</y>
-      <w>48</w>
-      <h>128</h>
+      <x>1045</x>
+      <y>1342</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -61,10 +64,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1056</x>
-      <y>1152</y>
-      <w>608</w>
-      <h>192</h>
+      <x>847</x>
+      <y>792</y>
+      <w>418</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>CustomerContainer
 --
@@ -72,17 +75,17 @@
 _- instance: CustomerContainer_
 --
 - &lt;&lt;create&gt;&gt; CustomerContainer
-_+ getInstance(): LoanContainer_
+_+ getInstance(): CustomerContainer_
 + addCustomerToContainer(customer: Customer): boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1344</x>
-      <y>1328</y>
-      <w>48</w>
-      <h>208</h>
+      <x>1045</x>
+      <y>913</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
@@ -90,10 +93,10 @@ _+ getInstance(): LoanContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1872</x>
-      <y>1504</y>
-      <w>528</w>
-      <h>416</h>
+      <x>1408</x>
+      <y>1034</y>
+      <w>363</w>
+      <h>286</h>
     </coordinates>
     <panel_attributes>Product
 --
@@ -111,16 +114,18 @@ _+ getInstance(): LoanContainer_
 + setName(name: String)
 + setBarcode(barcode: String)
 + setQuantityInStock(quantity: int)
-+ setCurrentPrice(price: double)</panel_attributes>
++ setCurrentPrice(price: double)
+
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1824</x>
-      <y>2000</y>
-      <w>608</w>
-      <h>176</h>
+      <x>1375</x>
+      <y>1375</y>
+      <w>418</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>ApplianceProduct
 --
@@ -128,16 +133,18 @@ _+ getInstance(): LoanContainer_
 --
 + &lt;&lt;create&gt;&gt; ApplianceProduct(name: String, barcode: String)
 + getCopies(): ArrayList&lt;Copy&gt;
-+ createCopy(copyNo: String)</panel_attributes>
++ createCopy(copyNo: String)
+
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2112</x>
-      <y>1904</y>
-      <w>48</w>
-      <h>128</h>
+      <x>1573</x>
+      <y>1309</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -145,12 +152,13 @@ _+ getInstance(): LoanContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1856</x>
-      <y>1152</y>
-      <w>560</w>
-      <h>192</h>
+      <x>1397</x>
+      <y>792</y>
+      <w>385</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>ProductContainer
+bg=yellow
 --
 - products: ArrayList&lt;Product&gt;
 _- instance: ProductContainer_
@@ -163,10 +171,10 @@ _+ getInstance(): ProductContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2112</x>
-      <y>1328</y>
-      <w>48</w>
-      <h>208</h>
+      <x>1573</x>
+      <y>913</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
@@ -174,10 +182,10 @@ _+ getInstance(): ProductContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2784</x>
-      <y>1552</y>
-      <w>304</w>
-      <h>272</h>
+      <x>2035</x>
+      <y>1067</y>
+      <w>209</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>Price
 --
@@ -188,16 +196,18 @@ _+ getInstance(): ProductContainer_
 + getValue(): double
 + getDate(): LocalDate
 + setValue(value: double)
-+ setDate(date: String)</panel_attributes>
++ setDate(date: String)
+
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2384</x>
-      <y>1728</y>
-      <w>432</w>
-      <h>48</h>
+      <x>1760</x>
+      <y>1188</y>
+      <w>297</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>250.0;10.0;10.0;10.0</additional_attributes>
@@ -206,11 +216,12 @@ _+ getInstance(): ProductContainer_
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>1504</y>
-      <w>848</w>
-      <h>464</h>
+      <y>1023</y>
+      <w>726</w>
+      <h>319</h>
     </coordinates>
     <panel_attributes>Employee
+bg=yellow
 --
 - name: String
 - address: String
@@ -218,7 +229,7 @@ _+ getInstance(): ProductContainer_
 - employeeNo: String
 - email: String
 --
-+ &lt;&lt;create&gt;&gt; Employee (name: String, address: String, phoneNo: String, email: String)
++ &lt;&lt;create&gt;&gt; Employee (name: String, address: String, phoneNo: String, employeeNo: String email: String)
 + getName(): String
 + getAddress(): String
 + getPhoneNo(): String
@@ -234,37 +245,38 @@ _+ getInstance(): ProductContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>256</x>
-      <y>2048</y>
-      <w>288</w>
-      <h>144</h>
+      <x>297</x>
+      <y>1408</y>
+      <w>209</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Manager
+bg=yellow
 --
-Access: boolean
+access: boolean
 --
 getAccess(): boolean
-setAcces(access: boolean)</panel_attributes>
+setAccess(access: boolean)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>1952</y>
-      <w>48</w>
-      <h>128</h>
+      <x>396</x>
+      <y>1331</y>
+      <w>33</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>1152</y>
-      <w>656</w>
-      <h>224</h>
+      <x>231</x>
+      <y>792</y>
+      <w>451</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>EmployeeContainer
 --
@@ -280,21 +292,21 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>416</x>
-      <y>1360</y>
-      <w>48</w>
-      <h>176</h>
+      <x>407</x>
+      <y>935</y>
+      <w>33</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>32</x>
-      <y>848</y>
-      <w>816</w>
-      <h>144</h>
+      <x>143</x>
+      <y>583</y>
+      <w>561</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>EmployeeController
 --
@@ -307,21 +319,21 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>976</y>
-      <w>48</w>
-      <h>560</h>
+      <x>165</x>
+      <y>671</y>
+      <w>33</w>
+      <h>374</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>416</x>
-      <y>976</y>
-      <w>48</w>
-      <h>208</h>
+      <x>407</x>
+      <y>671</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
@@ -329,10 +341,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>976</x>
-      <y>848</y>
-      <w>816</w>
-      <h>144</h>
+      <x>792</x>
+      <y>583</y>
+      <w>561</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>CustomerController
 --
@@ -345,10 +357,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1344</x>
-      <y>976</y>
-      <w>48</w>
-      <h>208</h>
+      <x>1045</x>
+      <y>671</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
@@ -356,10 +368,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1008</x>
-      <y>976</y>
-      <w>48</w>
-      <h>560</h>
+      <x>814</x>
+      <y>671</y>
+      <w>33</w>
+      <h>385</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
@@ -367,10 +379,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1840</x>
-      <y>848</y>
-      <w>592</w>
-      <h>160</h>
+      <x>1386</x>
+      <y>583</y>
+      <w>407</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>ProductController
 --
@@ -384,10 +396,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2112</x>
-      <y>992</y>
-      <w>48</w>
-      <h>192</h>
+      <x>1573</x>
+      <y>682</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
@@ -395,10 +407,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2384</x>
-      <y>944</y>
-      <w>128</w>
-      <h>640</h>
+      <x>1760</x>
+      <y>649</y>
+      <w>88</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;380.0;60.0;380.0;60.0;10.0;30.0;10.0</additional_attributes>
@@ -406,10 +418,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2256</x>
-      <y>464</y>
-      <w>352</w>
-      <h>320</h>
+      <x>1672</x>
+      <y>319</y>
+      <w>242</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Sale
 --
@@ -429,10 +441,10 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2720</x>
-      <y>528</y>
-      <w>400</w>
-      <h>192</h>
+      <x>1991</x>
+      <y>363</y>
+      <w>275</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>SaleContainer
 --
@@ -448,10 +460,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2592</x>
-      <y>640</y>
-      <w>160</w>
-      <h>48</h>
+      <x>1903</x>
+      <y>440</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
@@ -459,10 +471,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2544</x>
-      <y>1088</y>
-      <w>592</w>
-      <h>256</h>
+      <x>1870</x>
+      <y>748</y>
+      <w>407</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes>OrderLineItem
 --
@@ -479,10 +491,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2416</x>
-      <y>896</y>
-      <w>288</w>
-      <h>224</h>
+      <x>1782</x>
+      <y>616</y>
+      <w>198</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>160.0;120.0;160.0;10.0;10.0;10.0</additional_attributes>
@@ -490,10 +502,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2384</x>
-      <y>1328</y>
-      <w>304</w>
-      <h>384</h>
+      <x>1760</x>
+      <y>913</y>
+      <w>209</w>
+      <h>264</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;220.0;170.0;220.0;170.0;10.0</additional_attributes>
@@ -501,10 +513,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1408</x>
-      <y>256</y>
-      <w>688</w>
-      <h>160</h>
+      <x>1089</x>
+      <y>176</y>
+      <w>473</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>SaleController
 --
@@ -517,10 +529,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1488</x>
+      <x>1144</x>
       <y>0</y>
-      <w>176</w>
-      <h>48</h>
+      <w>121</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>SaleUI</panel_attributes>
     <additional_attributes/>
@@ -528,10 +540,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2080</x>
-      <y>352</y>
-      <w>400</w>
-      <h>144</h>
+      <x>1551</x>
+      <y>242</y>
+      <w>275</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>230.0;70.0;230.0;10.0;10.0;10.0</additional_attributes>
@@ -539,10 +551,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2080</x>
-      <y>288</y>
-      <w>880</w>
-      <h>272</h>
+      <x>1551</x>
+      <y>198</y>
+      <w>605</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>530.0;150.0;530.0;10.0;10.0;10.0</additional_attributes>
@@ -550,10 +562,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1552</x>
-      <y>32</y>
-      <w>48</w>
-      <h>256</h>
+      <x>1188</x>
+      <y>22</y>
+      <w>33</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
@@ -561,10 +573,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1936</x>
-      <y>400</y>
-      <w>48</w>
-      <h>480</h>
+      <x>1452</x>
+      <y>275</y>
+      <w>33</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
@@ -572,10 +584,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1504</x>
-      <y>400</y>
-      <w>48</w>
-      <h>480</h>
+      <x>1155</x>
+      <y>275</y>
+      <w>33</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
@@ -583,10 +595,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>416</x>
-      <y>320</y>
-      <w>1024</w>
-      <h>560</h>
+      <x>407</x>
+      <y>220</y>
+      <w>704</w>
+      <h>385</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;330.0;10.0;10.0;620.0;10.0</additional_attributes>
@@ -594,10 +606,10 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1952</x>
-      <y>2256</y>
-      <w>352</w>
-      <h>160</h>
+      <x>1463</x>
+      <y>1551</y>
+      <w>242</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>Copy
 --
@@ -605,16 +617,18 @@ _+ getInstance(): SaleContainer_
 --
 + &lt;&lt;create&gt;&gt; Copy(copyNo: String)
 + getCopyNo(): String
-+ setCopyNo(copyNo: String)</panel_attributes>
++ setCopyNo(copyNo: String)
+
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2112</x>
-      <y>2160</y>
-      <w>48</w>
-      <h>128</h>
+      <x>1573</x>
+      <y>1485</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
