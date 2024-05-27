@@ -1,26 +1,25 @@
 package model;
+import java.util.ArrayList;
 
 public class Product
 {
     private String name;
-    private String serialNo;
+    private String barcode;
     private int quantityInStock;
-    /* TODO Price list for keeping track of current and past prices
-     * Needs "Price" class
-     * Price prices = ArrayList<Price>
-     */
+    private ArrayList<Price> prices;
     
-    public Product(String name, String serialNo){
+    public Product(String name, String barcode){
         this.name = name;
-        this.serialNo = serialNo;
+        this.barcode = barcode;
         quantityInStock = 0;
+        prices = new ArrayList<>();
     }
     
     public String getName() {
         return this.name; 
     }
-    public String getSerialNo() { 
-        return this.serialNo; 
+    public String getBarcode() { 
+        return this.barcode; 
     }
     public int getQuantityInStock(){
         return this.quantityInStock;
@@ -28,14 +27,18 @@ public class Product
     public void setName(String name){
         this.name = name;
     }
-    public void setSerialNo(String serialNo){
-        this.serialNo = serialNo;
+    public void setBarcode(String barcode){
+        this.barcode = barcode;
     }
     public void setQuantityInStock(int quantity){
         this.quantityInStock = quantity;
     }
     
-    /*
-     * TODO Price getters and setters
-     */
+    public void newPrice(double value){
+        Price p = new Price(value);
+        prices.add(p);
+    }
+    public double getCurrentPrice(){
+        return prices.get(prices.size() - 1).getValue();
+    }
 }

@@ -1,18 +1,21 @@
 #BlueJ class context
 comment0.target=Product
-comment1.params=name\ serialNo
+comment1.params=name\ barcode
 comment1.target=Product(java.lang.String,\ java.lang.String)
-comment1.text=\ TODO\ Price\ list\ for\ keeping\ track\ of\ current\ and\ past\ prices\r\n\ Needs\ "Price"\ class\r\n\ Price\ prices\ \=\ ArrayList<Price>\r\n
 comment2.params=
 comment2.target=java.lang.String\ getName()
 comment3.params=
-comment3.target=java.lang.String\ getSerialNo()
+comment3.target=java.lang.String\ getBarcode()
 comment4.params=
 comment4.target=int\ getQuantityInStock()
 comment5.params=name
 comment5.target=void\ setName(java.lang.String)
-comment6.params=serialNo
-comment6.target=void\ setSerialNo(java.lang.String)
+comment6.params=barcode
+comment6.target=void\ setBarcode(java.lang.String)
 comment7.params=quantity
 comment7.target=void\ setQuantityInStock(int)
-numComments=8
+comment8.params=value
+comment8.target=void\ newPrice(double)
+comment9.params=
+comment9.target=double\ getCurrentPrice()
+numComments=10
