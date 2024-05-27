@@ -102,8 +102,8 @@ _+ getInstance(): LoanContainer_
 - quantityInStock: int
 - prices: ArrayList&lt;Price&gt;
 --
-+ &lt;&lt;create&gt;&gt; Product(name: String, serialNo: String)
-+ getName(): String´
++ &lt;&lt;create&gt;&gt; Product(name: String, barcode: String)
++ getName(): String
 + getBarcode(): String
 + getQuantityInStock(): int
 + getCurrentPrice(): double
@@ -118,17 +118,16 @@ _+ getInstance(): LoanContainer_
     <id>UMLClass</id>
     <coordinates>
       <x>1824</x>
-      <y>2048</y>
+      <y>2000</y>
       <w>608</w>
-      <h>192</h>
+      <h>176</h>
     </coordinates>
     <panel_attributes>ApplianceProduct
 --
 - copies: ArrayList&lt;Copy&gt;
 --
-+ &lt;&lt;create&gt;&gt; ComplexProduct(name: String, serialNo: String)
-+ getProducts(): Product
-+ addProduct(product: Product)
++ &lt;&lt;create&gt;&gt; ApplianceProduct(name: String, barcode: String)
++ getCopies(): ArrayList&lt;Copy&gt;
 + createCopy(copyNo: String)</panel_attributes>
     <additional_attributes/>
   </element>
@@ -138,10 +137,10 @@ _+ getInstance(): LoanContainer_
       <x>2112</x>
       <y>1904</y>
       <w>48</w>
-      <h>176</h>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -596,7 +595,7 @@ _+ getInstance(): SaleContainer_
     <id>UMLClass</id>
     <coordinates>
       <x>1952</x>
-      <y>2352</y>
+      <y>2256</y>
       <w>352</w>
       <h>160</h>
     </coordinates>
@@ -613,11 +612,11 @@ _+ getInstance(): SaleContainer_
     <id>Relation</id>
     <coordinates>
       <x>2112</x>
-      <y>2224</y>
+      <y>2160</y>
       <w>48</w>
-      <h>160</h>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
