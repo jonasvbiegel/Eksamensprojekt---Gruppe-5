@@ -15,8 +15,4 @@ public class Product
         this.serialNo = serialNo;
         quantityInStock = 0;
     }
-    
-    public void lol(){
-        System.out.println("lol");
-    }
 }
