@@ -2,4 +2,5 @@
 comment0.target=Product
 comment1.params=name\ serialNo
 comment1.target=Product(java.lang.String,\ java.lang.String)
+comment1.text=\ Price\ list\ for\ keeping\ track\ of\ current\ and\ past\ prices\r\n\ Needs\ "Price"\ class\r\n\ Price\ prices\ \=\ ArrayList<Price>\r\n
 numComments=2
