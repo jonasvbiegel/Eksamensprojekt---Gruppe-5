@@ -3,21 +3,22 @@ package model;
 import java.util.ArrayList;
 
 public class ProductContainer {
-    private static ArrayList<Product> ProductContainer = new ArrayList<Product>();
+    private ArrayList<Product> products;
+    private static ProductContainer instance;
 
     private ProductContainer(){
-        ProductContainer = null;
+        products = new ArrayList<>();
     }
 
-    public static ArrayList<Product> getInstance()
+    public static ProductContainer getInstance()
     {
-        if(ProductContainer == null){
-            ProductContainer = new ArrayList<>();
+        if(instance == null){
+            instance = new ProductContainer();
         }
-        return ProductContainer;
+        return instance;
     }
 
     public void addProductToContainer(Product p){
-        ProductContainer.add(p);
+        products.add(p);
     }
 }

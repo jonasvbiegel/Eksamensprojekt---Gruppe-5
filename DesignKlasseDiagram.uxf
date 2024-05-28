@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>300</x>
-      <y>618</y>
+      <x>432</x>
+      <y>564</y>
       <w>318</w>
       <h>174</h>
     </coordinates>
@@ -34,8 +34,8 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>366</x>
-      <y>822</y>
+      <x>498</x>
+      <y>768</y>
       <w>174</w>
       <h>60</h>
     </coordinates>
@@ -52,8 +52,8 @@ bg=yellow
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>786</y>
+      <x>588</x>
+      <y>732</y>
       <w>18</w>
       <h>48</h>
     </coordinates>
@@ -63,12 +63,13 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>348</x>
-      <y>486</y>
+      <x>480</x>
+      <y>432</y>
       <w>228</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>CustomerContainer
+bg=yellow
 --
 - customers: ArrayList&lt;Customer&gt;
 _- instance: CustomerContainer_
@@ -81,8 +82,8 @@ _+ getInstance(): CustomerContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>552</y>
+      <x>588</x>
+      <y>498</y>
       <w>18</w>
       <h>78</h>
     </coordinates>
@@ -92,8 +93,8 @@ _+ getInstance(): CustomerContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>654</x>
-      <y>618</y>
+      <x>786</x>
+      <y>564</y>
       <w>198</w>
       <h>156</h>
     </coordinates>
@@ -121,8 +122,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>636</x>
-      <y>804</y>
+      <x>768</x>
+      <y>750</y>
       <w>228</w>
       <h>66</h>
     </coordinates>
@@ -140,8 +141,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>768</y>
+      <x>876</x>
+      <y>714</y>
       <w>18</w>
       <h>48</h>
     </coordinates>
@@ -151,8 +152,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>648</x>
-      <y>486</y>
+      <x>780</x>
+      <y>432</y>
       <w>210</w>
       <h>72</h>
     </coordinates>
@@ -170,8 +171,8 @@ _+ getInstance(): ProductContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>552</y>
+      <x>876</x>
+      <y>498</y>
       <w>18</w>
       <h>78</h>
     </coordinates>
@@ -181,8 +182,8 @@ _+ getInstance(): ProductContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>996</x>
-      <y>636</y>
+      <x>1128</x>
+      <y>582</y>
       <w>114</w>
       <h>102</h>
     </coordinates>
@@ -203,8 +204,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
-      <y>702</y>
+      <x>978</x>
+      <y>648</y>
       <w>162</w>
       <h>18</h>
     </coordinates>
@@ -214,8 +215,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>-114</x>
-      <y>612</y>
+      <x>18</x>
+      <y>558</y>
       <w>396</w>
       <h>174</h>
     </coordinates>
@@ -244,8 +245,8 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
-      <y>822</y>
+      <x>180</x>
+      <y>768</y>
       <w>114</w>
       <h>54</h>
     </coordinates>
@@ -261,8 +262,8 @@ setAccess(access: boolean)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>102</x>
-      <y>780</y>
+      <x>234</x>
+      <y>726</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -272,12 +273,13 @@ setAccess(access: boolean)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>12</x>
-      <y>486</y>
+      <x>144</x>
+      <y>432</y>
       <w>246</w>
       <h>84</h>
     </coordinates>
     <panel_attributes>EmployeeContainer
+bg=yellow
 --
 - employees: ArrayList&lt;Employee&gt;
 _- instance: EmployeeContainer_
@@ -291,8 +293,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>564</y>
+      <x>240</x>
+      <y>510</y>
       <w>18</w>
       <h>60</h>
     </coordinates>
@@ -302,8 +304,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>-72</x>
-      <y>372</y>
+      <x>60</x>
+      <y>318</y>
       <w>384</w>
       <h>54</h>
     </coordinates>
@@ -318,8 +320,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>-24</x>
-      <y>420</y>
+      <x>108</x>
+      <y>366</y>
       <w>18</w>
       <h>204</h>
     </coordinates>
@@ -329,8 +331,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>420</y>
+      <x>240</x>
+      <y>366</y>
       <w>18</w>
       <h>78</h>
     </coordinates>
@@ -340,8 +342,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>318</x>
-      <y>372</y>
+      <x>450</x>
+      <y>318</y>
       <w>306</w>
       <h>54</h>
     </coordinates>
@@ -356,8 +358,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>420</y>
+      <x>588</x>
+      <y>366</y>
       <w>18</w>
       <h>78</h>
     </coordinates>
@@ -365,21 +367,10 @@ _+ getInstance(): EmployeeContainer_
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>258</x>
-      <y>420</y>
-      <w>90</w>
-      <h>210</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>130.0;330.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>642</x>
-      <y>372</y>
+      <x>774</x>
+      <y>318</y>
       <w>222</w>
       <h>60</h>
     </coordinates>
@@ -395,8 +386,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>426</y>
+      <x>876</x>
+      <y>372</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -406,8 +397,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
-      <y>408</y>
+      <x>978</x>
+      <y>354</y>
       <w>48</w>
       <h>240</h>
     </coordinates>
@@ -417,8 +408,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>798</x>
-      <y>228</y>
+      <x>930</x>
+      <y>174</y>
       <w>132</w>
       <h>120</h>
     </coordinates>
@@ -440,8 +431,8 @@ _+ getInstance(): EmployeeContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>972</x>
-      <y>252</y>
+      <x>1104</x>
+      <y>198</y>
       <w>150</w>
       <h>72</h>
     </coordinates>
@@ -459,8 +450,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>924</x>
-      <y>294</y>
+      <x>1056</x>
+      <y>240</y>
       <w>60</w>
       <h>18</h>
     </coordinates>
@@ -470,12 +461,13 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>906</x>
-      <y>462</y>
+      <x>1038</x>
+      <y>408</y>
       <w>222</w>
       <h>96</h>
     </coordinates>
     <panel_attributes>OrderLineItem
+bg=yellow
 --
 - product: Product
 - quantity: int
@@ -490,8 +482,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>390</y>
+      <x>990</x>
+      <y>336</y>
       <w>108</w>
       <h>84</h>
     </coordinates>
@@ -501,8 +493,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
-      <y>552</y>
+      <x>978</x>
+      <y>498</y>
       <w>114</w>
       <h>144</h>
     </coordinates>
@@ -512,8 +504,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>150</y>
+      <x>612</x>
+      <y>96</y>
       <w>258</w>
       <h>60</h>
     </coordinates>
@@ -528,8 +520,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>54</y>
+      <x>642</x>
+      <y>0</y>
       <w>66</w>
       <h>18</h>
     </coordinates>
@@ -539,8 +531,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>732</x>
-      <y>186</y>
+      <x>864</x>
+      <y>132</y>
       <w>150</w>
       <h>54</h>
     </coordinates>
@@ -550,8 +542,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>732</x>
-      <y>162</y>
+      <x>864</x>
+      <y>108</y>
       <w>330</w>
       <h>102</h>
     </coordinates>
@@ -561,8 +553,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>534</x>
-      <y>66</y>
+      <x>666</x>
+      <y>12</y>
       <w>18</w>
       <h>96</h>
     </coordinates>
@@ -572,8 +564,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>678</x>
-      <y>204</y>
+      <x>810</x>
+      <y>150</y>
       <w>18</w>
       <h>180</h>
     </coordinates>
@@ -583,8 +575,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>516</x>
-      <y>204</y>
+      <x>648</x>
+      <y>150</y>
       <w>18</w>
       <h>180</h>
     </coordinates>
@@ -594,8 +586,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>114</x>
-      <y>174</y>
+      <x>246</x>
+      <y>120</y>
       <w>378</w>
       <h>210</h>
     </coordinates>
@@ -605,8 +597,8 @@ _+ getInstance(): SaleContainer_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>900</y>
+      <x>816</x>
+      <y>846</y>
       <w>132</w>
       <h>60</h>
     </coordinates>
@@ -624,8 +616,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>864</y>
+      <x>876</x>
+      <y>810</y>
       <w>18</w>
       <h>48</h>
     </coordinates>
