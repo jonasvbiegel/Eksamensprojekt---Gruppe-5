@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>759</x>
+      <y>1034</y>
+      <w>583</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes>Customer
+bg=yellow
+--
+- name: String
+- address: String
+- phoneNo: String
+- customerNo: String
+- email: String
+--
++ &lt;&lt;create&gt;&gt; Customer(name: String, address: String, phoneNo: String, email: String)
++ getName(): String
++ getAddress(): String
++ getPhoneNo(): String
++ getCustomerNo(): String
++ getEmail(): String
++ setName(name: String)
++ setAddress(address: String)
++ setPhoneNo(phoneNo: String)
++ setCustomerNo(customerNo: String)
++ setEmail(email: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>1408</y>
+      <w>319</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CommercialCustomer
+bg=yellow
+--
+- cvr: String
+--
++ &lt;&lt;create&gt;&gt; CommercialCustomer(cvr: String)
++ getCvr(): String
++ setCvr(cvr: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>1342</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>792</y>
+      <w>418</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>CustomerContainer
+--
+- customers: ArrayList&lt;Customer&gt;
+_- instance: CustomerContainer_
+--
+- &lt;&lt;create&gt;&gt; CustomerContainer
+_+ getInstance(): CustomerContainer_
++ addCustomerToContainer(customer: Customer): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>913</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1408</x>
+      <y>1034</y>
+      <w>363</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+- name: String
+- barcode: String
+- quantityInStock: int
+- prices: ArrayList&lt;Price&gt;
+--
++ &lt;&lt;create&gt;&gt; Product(name: String, barcode: String)
++ getName(): String
++ getBarcode(): String
++ getQuantityInStock(): int
++ getCurrentPrice(): double
++ getPrice(): double
++ setName(name: String)
++ setBarcode(barcode: String)
++ setQuantityInStock(quantity: int)
++ setCurrentPrice(price: double)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1375</x>
+      <y>1375</y>
+      <w>418</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>ApplianceProduct
+--
+- copies: ArrayList&lt;Copy&gt;
+--
++ &lt;&lt;create&gt;&gt; ApplianceProduct(name: String, barcode: String)
++ getCopies(): ArrayList&lt;Copy&gt;
++ createCopy(copyNo: String)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1573</x>
+      <y>1309</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1397</x>
+      <y>792</y>
+      <w>385</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>ProductContainer
+bg=yellow
+--
+- products: ArrayList&lt;Product&gt;
+_- instance: ProductContainer_
+--
+- &lt;&lt;create&gt;&gt; ProductContainer
+_+ getInstance(): ProductContainer_
++ addProductToContainer(product: Product): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1573</x>
+      <y>913</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2035</x>
+      <y>1067</y>
+      <w>209</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>Price
+--
+- value: double
+- date: LocalDate
+--
++ &lt;&lt;create&gt;&gt; Price(value: int)
++ getValue(): double
++ getDate(): LocalDate
++ setValue(value: double)
++ setDate(date: String)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1760</x>
+      <y>1188</y>
+      <w>297</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1023</y>
+      <w>726</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes>Employee
+bg=yellow
+--
+- name: String
+- address: String
+- phoneNo: String
+- employeeNo: String
+- email: String
+--
++ &lt;&lt;create&gt;&gt; Employee (name: String, address: String, phoneNo: String, employeeNo: String email: String)
++ getName(): String
++ getAddress(): String
++ getPhoneNo(): String
++ getEmployeeNo(): String
++ getEmail(): String
++ setName(name: String)
++ setAddress(address: String)
++ setPhoneNo(phoneNo: String)
++ setEmployeeNo(customerNo: String)
++ setEmail(email: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>1408</y>
+      <w>209</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Manager
+bg=yellow
+--
+access: boolean
+--
+getAccess(): boolean
+setAccess(access: boolean)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>1331</y>
+      <w>33</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>792</y>
+      <w>451</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>EmployeeContainer
+--
+- employees: ArrayList&lt;Employee&gt;
+_- instance: EmployeeContainer_
+--
+- &lt;&lt;create&gt;&gt; EmployeeContainer
+_+ getInstance(): EmployeeContainer_
++ addEmployeeToContainer(employee: Employee): boolean
++ findEmployeeByEmployeeNo(employeeNo: String): Employee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>407</x>
+      <y>935</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>143</x>
+      <y>583</y>
+      <w>561</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>EmployeeController
+--
+
+--
++ createEmployee(name: String, adress: String, phoneNo: String, email: String)
++ findEmployeeByEmployeeNo(employeeNo: String): Employee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>671</y>
+      <w>33</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>407</x>
+      <y>671</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>583</y>
+      <w>561</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>CustomerController
+--
+
+--
++ createCustomer(name: String, adress: String, phoneNo: String, email: String)
++ findCustomerByCustomerNo(employeeNo: String): Employee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>671</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>814</x>
+      <y>671</y>
+      <w>33</w>
+      <h>385</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1386</x>
+      <y>583</y>
+      <w>407</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>ProductController
+--
+
+--
++ createProduct(name: String, serialNo: String): boolean
++ findProductBySerialNo(serialNo: String): Product
++ createOrderLineItem(product: Product, quantity: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1573</x>
+      <y>682</y>
+      <w>33</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1760</x>
+      <y>649</y>
+      <w>88</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;380.0;60.0;380.0;60.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1672</x>
+      <y>319</y>
+      <w>242</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Sale
+--
+- orderNo: int
+- date: LocalDate
+- customer: Customer
+- employee: Employee
+- items: ArrayList&lt;OrderLineItem&gt;
+--
++ &lt;&lt;create&gt;&gt; Sale(orderNo: int)
++ getOrderNo(): int
++ getDate(): LocalDate
++ setOrderNo(orderNo: int)
++ setDate(date: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1991</x>
+      <y>363</y>
+      <w>275</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>SaleContainer
+--
+- sales: ArrayList&lt;Sale&gt;
+_- instance: SalesContainer_
+--
+- &lt;&lt;create&gt;&gt; SaleContainer
+_+ getInstance(): SaleContainer_
++ findSaleBySaleNo(saleNo: int): Sale
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1903</x>
+      <y>440</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1870</x>
+      <y>748</y>
+      <w>407</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>OrderLineItem
+--
+- product: Product
+- quantity: int
+--
++ &lt;&lt;create&gt;&gt; OrderLineItem(product: Product, quantity: int)
++ getProduct(): Product
++ getQuantity(): int
++ setProduct(product: Product)
++ setQuantity(quantity: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1782</x>
+      <y>616</y>
+      <w>198</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>160.0;120.0;160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1760</x>
+      <y>913</y>
+      <w>209</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;220.0;170.0;220.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1089</x>
+      <y>176</y>
+      <w>473</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>SaleController
+--
+
+--
++ createSale(orderNo: int, employeeNo: String, customerNo: String)
++ addProductToSale(product: Product, quantity: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1144</x>
+      <y>0</y>
+      <w>121</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>SaleUI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1551</x>
+      <y>242</y>
+      <w>275</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>230.0;70.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1551</x>
+      <y>198</y>
+      <w>605</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>530.0;150.0;530.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1188</x>
+      <y>22</y>
+      <w>33</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1452</x>
+      <y>275</y>
+      <w>33</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>275</y>
+      <w>33</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>407</x>
+      <y>220</y>
+      <w>704</w>
+      <h>385</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;330.0;10.0;10.0;620.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1463</x>
+      <y>1551</y>
+      <w>242</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Copy
+--
+- copyNo: String
+--
++ &lt;&lt;create&gt;&gt; Copy(copyNo: String)
++ getCopyNo(): String
++ setCopyNo(copyNo: String)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1573</x>
+      <y>1485</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
