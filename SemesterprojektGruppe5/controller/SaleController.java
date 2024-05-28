@@ -1,5 +1,7 @@
 package controller;
 
+import model.*;
+
 public class SaleController
 {
     
@@ -8,16 +10,20 @@ public class SaleController
     }
 
     /**
-     * Method creates Sale and adds to SaleContainer.
+     * Method creates Sale.
      */
-    public void createSale(int orderNo, String employeeNo, String customerNo) {
-        //TODO
+    public void createSale(int orderNo, String phoneNo, String employeeNo) {
+        CustomerController customerController = new CustomerController();
+        EmployeeController employeeController = new EmployeeController();
+        Sale sale = new Sale(orderNo, employeeController.findEmployeeByEmployeeNo(employeeNo), customerController.findCustomerByPhoneNo(phoneNo));
     }
     
     /**
      * Method adds Product to Sale.
      */
-    public void addProductToSale() {
-        //TODO
+    public void addProductToSale(String barcode, int quantity, int orderNo) {
+        ProductController productController = new ProductController();
+        Sale s = SaleContainer.getInstance().findSaleByOrderNo(orderNo);
+        s.addItem(productController.createOrderLineItem(productController.findProductByBarcode(barcode), quantity));
     }
 }

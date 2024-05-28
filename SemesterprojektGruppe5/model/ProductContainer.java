@@ -18,6 +18,10 @@ public class ProductContainer {
         return instance;
     }
 
+    public ArrayList<Product> getProducts() {
+        return this.products;
+    }
+
     public void addProductToContainer(Product p){
         products.add(p);
     }

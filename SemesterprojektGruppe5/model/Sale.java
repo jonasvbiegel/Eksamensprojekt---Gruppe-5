@@ -1,5 +1,6 @@
 package model;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Sale
@@ -10,8 +11,12 @@ public class Sale
     private Employee employee;
     private ArrayList<OrderLineItem> items; 
 
-    public Sale(int orderNo){
+    public Sale(int orderNo, Employee employee, Customer customer){
         this.orderNo = orderNo;
+        this.employee = employee;
+        this.customer = customer;
+        this.date = LocalDate.now();
+        items = new ArrayList<>();
     }
 
     /**
@@ -38,7 +43,15 @@ public class Sale
     /**
      * Method sets date.
      */
-    public void setDate(){
-        //TODO
+    public void setDate(String date){
+        this.date = LocalDate.parse(date, DateTimeFormatter.ofPattern("ddMMyyyy"));
+    }
+
+    public ArrayList<OrderLineItem> getItems(){
+        return this.items;
+    }
+
+    public void addItem(OrderLineItem item){
+        this.items.add(item);
     }
 }

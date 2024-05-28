@@ -17,6 +17,10 @@ public class EmployeeContainer {
         return instance;
     }
 
+    public ArrayList<Employee> getEmployees(){
+        return this.employees;
+    }
+
     public void addEmployeeToContainer(Employee e){
         employees.add(e);
     }

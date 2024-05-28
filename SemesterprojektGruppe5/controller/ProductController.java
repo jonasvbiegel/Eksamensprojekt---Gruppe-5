@@ -23,14 +23,17 @@ public class ProductController
     /**
      * Method returns Product by provided SerialNo.
      */
-    public Product findProductBarcode(String barcode) {
+    public Product findProductByBarcode(String barcode){
         Product foundProduct = null;
-        ProductContainer pc = ProductContainer.getInstance();
-        for(Product p : pc){
+        ArrayList<Product> list = ProductContainer.getInstance().getProducts();
+        for(Product p : list){
             if(p.getBarcode() == barcode){
                 foundProduct = p;
                 break;
             }
+        }
+        if(foundProduct == null){
+            throw new IllegalArgumentException("Product not found");
         }
         return foundProduct;
     }
@@ -38,7 +41,8 @@ public class ProductController
     /**
      * Method creates OrderLineItem.
      */
-    public void createOrderLineItem(Product product, int quantity) {
+    public OrderLineItem createOrderLineItem(Product product, int quantity) {
          OrderLineItem currentOrderLineItem = new OrderLineItem(product, quantity);
+         return currentOrderLineItem;
     }
 }

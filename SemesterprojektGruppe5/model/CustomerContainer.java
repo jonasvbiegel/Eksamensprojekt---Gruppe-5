@@ -17,6 +17,10 @@ public class CustomerContainer {
         return instance;
     }
 
+    public ArrayList<Customer> getCustomers() {
+        return this.customers;
+    }
+
     public void addCustomerToContainer(Customer c){
         customers.add(c);
     }
