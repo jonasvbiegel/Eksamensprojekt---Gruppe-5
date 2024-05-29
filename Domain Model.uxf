@@ -423,7 +423,7 @@ is at &gt;</panel_attributes>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
-contains ^</panel_attributes>
+contains &gt;</panel_attributes>
     <additional_attributes>210.0;70.0;210.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
   </element>
   <element>
@@ -457,7 +457,7 @@ m2=1
 
 
 
-places &gt;</panel_attributes>
+places v</panel_attributes>
     <additional_attributes>70.0;640.0;10.0;640.0;10.0;10.0;40.0;10.0</additional_attributes>
   </element>
   <element>
