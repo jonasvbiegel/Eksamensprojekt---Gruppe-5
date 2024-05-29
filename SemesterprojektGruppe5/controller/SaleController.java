@@ -51,7 +51,6 @@ public class SaleController
         ProductController productController = new ProductController();
         Sale s = findSaleByOrderNo(orderNo);
         OrderLineItem o = productController.createOrderLineItem(productController.findProductByBarcode(barcode), quantity);
-        //s.addItem(productController.createOrderLineItem(productController.findProductByBarcode(barcode), quantity));
         s.addItem(o);
     }
 

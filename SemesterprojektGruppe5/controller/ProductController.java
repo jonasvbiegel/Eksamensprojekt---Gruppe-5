@@ -27,7 +27,7 @@ public class ProductController
         Product foundProduct = null;
         ArrayList<Product> list = ProductContainer.getInstance().getProducts();
         for(Product p : list){
-            if(p.getBarcode() == barcode){
+            if(p.getBarcode().equals(barcode)){
                 foundProduct = p;
                 break;
             }
