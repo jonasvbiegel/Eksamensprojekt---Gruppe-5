@@ -275,7 +275,7 @@ products</panel_attributes>
     </coordinates>
     <panel_attributes>m1=1
 m2=0..*
-contains &gt;</panel_attributes>
+contains v</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
