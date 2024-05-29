@@ -21,7 +21,7 @@ public class SaleUI {
             System.out.println("1. Create Sale");
             System.out.println("2. Generate test data");
             System.out.println();
-            System.out.println("3. Exit");
+            System.out.println("9. Exit");
 
             switch(sn.nextInt()){
                 case 1: CreateSale();
@@ -64,20 +64,35 @@ public class SaleUI {
         sn = new Scanner(System.in);
         System.out.println("Enter employee number:");
         String employeeNo = sn.nextLine();
+
         System.out.println("Enter customers phone number:");
         String phoneNo = sn.nextLine();
+
         System.out.println("Enter order number for the order:");
         int orderNo = sn.nextInt();
-        sn.nextLine();
-        saleController.createSale(orderNo, phoneNo, employeeNo);
-        System.out.println("Enter barcode:");
+        sn.nextLine(); //this has to be here
+
+        createSale(orderNo, phoneNo, employeeNo);
+
+        System.out.println("Enter barcode of product:");
         String barcode = sn.nextLine();
-        addProductToSale("abc", orderNo, 1);
+
+        //saleController.productInformation(barcode);
+        System.out.println("Quantity:");
+        int quantity = sn.nextInt();
+        sn.nextLine();
+        addProductToSale(barcode, orderNo, quantity);
+        // addProductToSale("abc", 1, 1);
     }
 
     public void addProductToSale(String barcode, int orderNo, int quantity){
         SaleController s = new SaleController();
         s.addProductToSale(barcode, quantity, orderNo);
+    }
+
+    public void createSale(int orderNo, String phoneNo, String employeeNo){
+        SaleController s = new SaleController();
+        s.createSale(orderNo, phoneNo, employeeNo);
     }
 
 }

@@ -16,7 +16,6 @@ public class Test {
         ProductController p = new ProductController();
         p.createProduct("Søm", "abc");
         System.out.println("Created product Søm with barcode abc");
-
     }
 
     public void findEmployee(String employeeNo){

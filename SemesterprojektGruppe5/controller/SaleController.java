@@ -1,6 +1,7 @@
 package controller;
 
 import model.OrderLineItem;
+import model.Product;
 import model.Sale;
 import model.SaleContainer;
 
@@ -9,8 +10,12 @@ import java.util.ArrayList;
 public class SaleController
 {
     
-    public SaleController() {
-        
+    public void SaleController() {
+    }
+
+    public void productInformation(String barcode){
+        ProductController p = new ProductController();
+        System.out.println(p.findProductByBarcode(barcode).getBarcode() + " " + p.findProductByBarcode(barcode).getName() + ": Quantity in stock: " + p.findProductByBarcode(barcode).getQuantityInStock());
     }
 
     public Sale findSaleByOrderNo(int orderNo){
