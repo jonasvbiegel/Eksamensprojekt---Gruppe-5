@@ -25,7 +25,7 @@ public class EmployeeController
         Employee foundEmployee = null;
         ArrayList<Employee> list = EmployeeContainer.getInstance().getEmployees();
         for(Employee e : list){
-            if(employeeNo == e.getEmployeeNo()){
+            if(e.getEmployeeNo().equals(employeeNo)){
                 foundEmployee = e;
                 break;
             }

@@ -14,8 +14,8 @@ public class ProductController
     /**
      * Method creates Product and adds to ProductContainer.
      */
-    public void createProduct(String name, String serialNo) {
-        Product currentProduct = new Product(name, serialNo);
+    public void createProduct(String name, String barcode) {
+        Product currentProduct = new Product(name, barcode);
         ProductContainer pc = ProductContainer.getInstance();
         pc.addProductToContainer(currentProduct);
     }

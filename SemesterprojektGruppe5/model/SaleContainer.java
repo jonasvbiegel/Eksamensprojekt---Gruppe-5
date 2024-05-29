@@ -26,14 +26,4 @@ public class SaleContainer {
         sales.add(s);
     }
 
-    public Sale findSaleByOrderNo(int orderNo){
-        Sale foundSale = null;
-        for(Sale s : sales){
-            if(s.getOrderNo() == orderNo){
-                foundSale = s;
-                break;
-            }
-        }
-        return foundSale;
-    }
 }
