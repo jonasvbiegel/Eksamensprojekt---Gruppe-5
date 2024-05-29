@@ -1,6 +1,7 @@
 package controller;
 
-import model.*;
+import model.Sale;
+import model.SaleContainer;
 
 public class SaleController
 {
@@ -25,5 +26,12 @@ public class SaleController
         ProductController productController = new ProductController();
         Sale s = SaleContainer.getInstance().findSaleByOrderNo(orderNo);
         s.addItem(productController.createOrderLineItem(productController.findProductByBarcode(barcode), quantity));
+    }
+
+    /**
+     * Method adds Sale to SaleContainer.
+     */
+    public void finalizeSale(Sale s){
+        SaleContainer.getInstance().addSaleToContainer(s);
     }
 }
