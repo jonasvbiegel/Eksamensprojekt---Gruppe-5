@@ -2,6 +2,7 @@ package view;
 import controller.CustomerController;
 import controller.EmployeeController;
 import controller.SaleController;
+import model.OrderLineItem;
 
 import java.util.Scanner;
 
@@ -20,6 +21,7 @@ public class SaleUI {
             System.out.println("-----------------------------------------");
             System.out.println("1. Create Sale");
             System.out.println("2. Generate test data");
+            System.out.println("3. Find sale by order number");
             System.out.println();
             System.out.println("9. Exit");
 
@@ -28,12 +30,12 @@ public class SaleUI {
                 break;
                 case 2: testData();
                 break;
-                case 3: findEmployee();
+                case 3: findSale();
                 break;
-                case 4: findCustomer();
-                break;
-                case 5: findSale(1);
                 case 9: running = false;
+                break;
+                default: System.out.println("Invalid option");
+                break;
             }
         }
     }
@@ -57,7 +59,6 @@ public class SaleUI {
     public void testData(){
         Test t = new Test();
         t.generateTestData();
-        t.findEmployee("1");
     }
 
     public void CreateSale() {
@@ -65,30 +66,27 @@ public class SaleUI {
         sn = new Scanner(System.in);
         System.out.println("Enter employee number:");
         String employeeNo = sn.nextLine();
-        System.out.println(employeeNo);
 
         System.out.println("Enter customers phone number:");
         String phoneNo = sn.nextLine();
-        System.out.println(phoneNo);
 
         System.out.println("Enter order number for the order:");
         int orderNo = sn.nextInt();
-        System.out.println(orderNo);
         sn.nextLine(); //this has to be here
 
-        createSale(orderNo, phoneNo, employeeNo);
+        try{
+            createSale(orderNo, phoneNo, employeeNo);
+        } catch (Exception e) {
+            System.out.println("Something went wrong; order cancelled");
+        }
 
         System.out.println("Enter barcode of product:");
         String barcode = sn.nextLine();
-        System.out.println(barcode);
 
-        //saleController.productInformation(barcode);
         System.out.println("Quantity:");
         int quantity = sn.nextInt();
-        System.out.println(quantity);
         sn.nextLine();
-        addProductToSale(barcode, orderNo, quantity);
-        //addProductToSale("abc", 1, 1);
+        addProductToSale(barcode, quantity, orderNo);
     }
 
     public void addProductToSale(String barcode, int quantity, int orderNo){
@@ -101,9 +99,16 @@ public class SaleUI {
         s.createSale(orderNo, phoneNo, employeeNo);
     }
 
-    public void findSale(int orderNo){
+    public void findSale(){
         SaleController s = new SaleController();
-        System.out.println(s.findSaleByOrderNo(orderNo).getOrderNo());
+        sn = new Scanner(System.in);
+        System.out.println("Enter order number:");
+        int orderNo = sn.nextInt();
+        System.out.println("Sale with order number " + orderNo);
+        System.out.println("Date: " + s.findSaleByOrderNo(orderNo).getDate());
+        for(OrderLineItem o : s.findSaleByOrderNo(orderNo).getItems()){
+            System.out.println(o.getProduct().getName() + " x " + o.getQuantity() + " " + o.getProduct().getCurrentPrice() * o.getQuantity());
+        }
     }
 
 }
