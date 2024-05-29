@@ -9,7 +9,7 @@
       <w>88</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>:SaleUI</panel_attributes>
+    <panel_attributes>:SalesUI</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -192,7 +192,7 @@ Customer</panel_attributes>
       <w>120</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>:SaleController</panel_attributes>
+    <panel_attributes>:SalesController</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -215,7 +215,7 @@ Customer</panel_attributes>
       <w>120</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>:SaleContainer</panel_attributes>
+    <panel_attributes>:SalesContainer</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -250,7 +250,7 @@ Sale</panel_attributes>
       <w>80</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>:Sale</panel_attributes>
+    <panel_attributes>:Sales</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

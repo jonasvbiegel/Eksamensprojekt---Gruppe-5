@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>315</x>
-      <y>171</y>
+      <x>333</x>
+      <y>90</y>
       <w>90</w>
       <h>99</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>252</y>
+      <x>369</x>
+      <y>171</y>
       <w>27</w>
       <h>468</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>576</x>
-      <y>234</y>
+      <x>594</x>
+      <y>153</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -38,8 +38,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
-      <y>252</y>
+      <x>630</x>
+      <y>171</y>
       <w>27</w>
       <h>468</h>
     </coordinates>
@@ -49,8 +49,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>333</y>
+      <x>369</x>
+      <y>252</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -61,20 +61,20 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>378</y>
+      <x>369</x>
+      <y>297</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>name, price, location, quantity
+    <panel_attributes>name, price, quantity
 lt=&lt;.</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>315</x>
-      <y>324</y>
+      <x>333</x>
+      <y>243</y>
       <w>351</w>
       <h>180</h>
     </coordinates>
@@ -84,8 +84,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>423</y>
+      <x>369</x>
+      <y>342</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -96,8 +96,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>468</y>
+      <x>369</x>
+      <y>387</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -108,8 +108,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>513</y>
+      <x>369</x>
+      <y>432</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -120,8 +120,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>558</y>
+      <x>369</x>
+      <y>477</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -132,8 +132,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>603</y>
+      <x>369</x>
+      <y>522</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -144,20 +144,20 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>288</y>
+      <x>369</x>
+      <y>207</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>createNewSale()
+    <panel_attributes>createSale()
 lt=&lt;-</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>648</y>
+      <x>369</x>
+      <y>567</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
