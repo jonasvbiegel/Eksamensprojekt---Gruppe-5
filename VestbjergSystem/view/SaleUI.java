@@ -3,6 +3,7 @@ import controller.CustomerController;
 import controller.EmployeeController;
 import controller.SaleController;
 import model.OrderLineItem;
+import model.Sale;
 
 import java.util.Scanner;
 
@@ -80,13 +81,22 @@ public class SaleUI {
             System.out.println("Something went wrong; order cancelled");
         }
 
-        System.out.println("Enter barcode of product:");
-        String barcode = sn.nextLine();
+        boolean adding = true;
 
-        System.out.println("Quantity:");
-        int quantity = sn.nextInt();
-        sn.nextLine();
-        addProductToSale(barcode, quantity, orderNo);
+        while(adding) {
+            System.out.println("Press 0 to finalize sale, or any key to continue adding products");
+            if(sn.nextLine().equals("0")){
+                printSale(orderNo);
+                return;
+            }
+            System.out.println("Enter barcode of product:");
+            String barcode = sn.nextLine();
+
+            System.out.println("Quantity:");
+            int quantity = sn.nextInt();
+            sn.nextLine();
+            addProductToSale(barcode, quantity, orderNo);
+        }
     }
 
     public void addProductToSale(String barcode, int quantity, int orderNo){
@@ -99,16 +109,26 @@ public class SaleUI {
         s.createSale(orderNo, phoneNo, employeeNo);
     }
 
-    public void findSale(){
+    public void printSale(int orderNo){
         SaleController s = new SaleController();
-        sn = new Scanner(System.in);
-        System.out.println("Enter order number:");
-        int orderNo = sn.nextInt();
+        double totalPrice = 0;
         System.out.println("Sale with order number " + orderNo);
         System.out.println("Date: " + s.findSaleByOrderNo(orderNo).getDate());
         for(OrderLineItem o : s.findSaleByOrderNo(orderNo).getItems()){
             System.out.println(o.getProduct().getName() + " x " + o.getQuantity() + " " + o.getProduct().getCurrentPrice() * o.getQuantity());
+            totalPrice += o.getProduct().getCurrentPrice() * o.getQuantity();
         }
+        System.out.println("Total price: " + totalPrice + " DKK");
+    }
+
+    public void findSale(){
+        double totalPrice = 0;
+        SaleController s = new SaleController();
+        sn = new Scanner(System.in);
+        System.out.println("Enter order number:");
+        int orderNo = sn.nextInt();
+        printSale(orderNo);
+
     }
 
 }
