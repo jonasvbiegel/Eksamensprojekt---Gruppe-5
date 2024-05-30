@@ -30,7 +30,7 @@ public class SaleUI {
                 break;
                 case 2: testData();
                 break;
-                case 3: printSale();
+                case 3: findSale();
                 break;
                 case 9: running = false;
                 break;
@@ -78,11 +78,12 @@ public class SaleUI {
             createSale(orderNo, phoneNo, employeeNo);
         } catch (Exception e) {
             System.out.println("Something went wrong; order cancelled");
-            return;
         }
 
-        boolean addingProducts = true;
+        System.out.println("Enter barcode of product:");
+        String barcode = sn.nextLine();
 
+<<<<<<< HEAD
         while(addingProducts) {
             System.out.println("Press 0 to stop adding products, or enter to add more products");
             if ("0".equals(sn.nextLine())) {
@@ -97,6 +98,12 @@ public class SaleUI {
                 addProductToSale(barcode, quantity, orderNo);
             }
         }
+=======
+        System.out.println("Quantity:");
+        int quantity = sn.nextInt();
+        sn.nextLine();
+        addProductToSale(barcode, quantity, orderNo);
+>>>>>>> parent of 023689a (Update SaleUI.java)
     }
 
     public void addProductToSale(String barcode, int quantity, int orderNo){
@@ -109,8 +116,7 @@ public class SaleUI {
         s.createSale(orderNo, phoneNo, employeeNo);
     }
 
-    public void printSale(){
-        double totalPrice = 0;
+    public void findSale(){
         SaleController s = new SaleController();
         sn = new Scanner(System.in);
         System.out.println("Enter order number:");
@@ -118,10 +124,8 @@ public class SaleUI {
         System.out.println("Sale with order number " + orderNo);
         System.out.println("Date: " + s.findSaleByOrderNo(orderNo).getDate());
         for(OrderLineItem o : s.findSaleByOrderNo(orderNo).getItems()){
-            System.out.println(o.getProduct().getName() + " x " + o.getQuantity() + " " + o.getProduct().getCurrentPrice() * o.getQuantity() + " DKK");
-            totalPrice += o.getProduct().getCurrentPrice() * o.getQuantity();
+            System.out.println(o.getProduct().getName() + " x " + o.getQuantity() + " " + o.getProduct().getCurrentPrice() * o.getQuantity());
         }
-        System.out.println("Total price: " + totalPrice);
     }
 
 }
