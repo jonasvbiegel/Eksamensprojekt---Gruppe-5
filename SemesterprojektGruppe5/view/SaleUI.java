@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class SaleUI {
     public SaleUI(){
-        MainMenu();
+        mainMenu();
     }
 
     Scanner sn;
 
-    public void MainMenu(){
+    public void mainMenu(){
         boolean running = true;
         sn = new Scanner(System.in);
         System.out.println("Welcome to the Vestbjerg A/S Sales System");
@@ -84,7 +84,7 @@ public class SaleUI {
         boolean addingProducts = true;
 
         while(addingProducts) {
-            System.out.println("Press 0 to stop adding products");
+            System.out.println("Press 0 to stop adding products, or enter to add more products");
             if ("0".equals(sn.nextLine())) {
                 addingProducts = false;
             } else {
