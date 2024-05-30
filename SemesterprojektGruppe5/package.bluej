@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 editor.fx.0.height=737
 editor.fx.0.width=814
 editor.fx.0.x=360
@@ -8,13 +9,24 @@ objectbench.width=1511
 package.divider.horizontal=0.5998681608437706
 package.divider.vertical=0.8477546549835707
 package.editor.height=613
+=======
+editor.fx.0.height=1045
+editor.fx.0.width=971
+editor.fx.0.x=-5
+editor.fx.0.y=0
+objectbench.height=94
+objectbench.width=901
+package.divider.horizontal=0.5997361477572559
+package.divider.vertical=0.8600766703176342
+package.editor.height=623
+>>>>>>> 3e7a5581c6c9150fea1119a0ca37b5c2227ec71e
 package.editor.width=1424
 package.editor.x=0
 package.editor.y=0
 package.frame.height=830
 package.frame.width=1550
 package.numDependencies=0
-package.numTargets=3
+package.numTargets=1
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
@@ -24,9 +36,10 @@ readme.width=49
 readme.x=10
 readme.y=10
 target1.height=82
-target1.name=controller
+target1.name=view
 target1.type=PackageTarget
 target1.width=120
+<<<<<<< HEAD
 target1.x=310
 target1.y=230
 target2.height=82
@@ -41,3 +54,7 @@ target3.type=PackageTarget
 target3.width=120
 target3.x=300
 target3.y=340
+=======
+target1.x=320
+target1.y=100
+>>>>>>> 3e7a5581c6c9150fea1119a0ca37b5c2227ec71e
