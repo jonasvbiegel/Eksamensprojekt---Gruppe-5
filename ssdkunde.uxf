@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>333</x>
-      <y>90</y>
+      <x>324</x>
+      <y>99</y>
       <w>90</w>
       <h>99</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>171</y>
+      <x>360</x>
+      <y>180</y>
       <w>27</w>
       <h>468</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>153</y>
+      <x>585</x>
+      <y>162</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -38,8 +38,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>171</y>
+      <x>621</x>
+      <y>180</y>
       <w>27</w>
       <h>468</h>
     </coordinates>
@@ -49,20 +49,20 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>252</y>
+      <x>360</x>
+      <y>261</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>findProductBySerialNo(serialNo)
+    <panel_attributes>findProductByBarcode(barcode)
 lt=&lt;-</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>297</y>
+      <x>360</x>
+      <y>306</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -73,8 +73,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>333</x>
-      <y>243</y>
+      <x>324</x>
+      <y>252</y>
       <w>351</w>
       <h>180</h>
     </coordinates>
@@ -84,8 +84,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>342</y>
+      <x>360</x>
+      <y>351</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -96,8 +96,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>387</y>
+      <x>360</x>
+      <y>396</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -108,8 +108,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>432</y>
+      <x>360</x>
+      <y>441</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -120,8 +120,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>477</y>
+      <x>360</x>
+      <y>486</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -132,8 +132,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>522</y>
+      <x>360</x>
+      <y>531</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -144,8 +144,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>207</y>
+      <x>360</x>
+      <y>216</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -156,8 +156,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>567</y>
+      <x>360</x>
+      <y>576</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
