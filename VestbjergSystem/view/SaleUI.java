@@ -2,6 +2,7 @@ package view;
 import controller.CustomerController;
 import controller.EmployeeController;
 import controller.SaleController;
+import model.Customer;
 import model.OrderLineItem;
 import model.Sale;
 
@@ -64,12 +65,28 @@ public class SaleUI {
 
     public void CreateSale() {
         SaleController saleController = new SaleController();
+        EmployeeController employeeController = new EmployeeController();
+        CustomerController customerController = new CustomerController();
         sn = new Scanner(System.in);
         System.out.println("Enter employee number:");
         String employeeNo = sn.nextLine();
 
+        try {
+            System.out.println(employeeController.findEmployeeByEmployeeNo(employeeNo).getName());
+        } catch(Exception e) {
+            System.out.println("Employee not found; action cancelled");
+            return;
+        }
+
         System.out.println("Enter customers phone number:");
         String phoneNo = sn.nextLine();
+
+        try {
+            System.out.println(customerController.findCustomerByPhoneNo(phoneNo).getName());
+        } catch(Exception e) {
+            System.out.println("Customer not found; action cancelled");
+            return;
+        }
 
         System.out.println("Enter order number for the order:");
         int orderNo = sn.nextInt();
