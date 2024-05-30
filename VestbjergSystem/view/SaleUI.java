@@ -84,11 +84,6 @@ public class SaleUI {
         boolean adding = true;
 
         while(adding) {
-            System.out.println("Press 0 to finalize sale, or any key to continue adding products");
-            if(sn.nextLine().equals("0")){
-                printSale(orderNo);
-                return;
-            }
             System.out.println("Enter barcode of product:");
             String barcode = sn.nextLine();
 
@@ -96,6 +91,11 @@ public class SaleUI {
             int quantity = sn.nextInt();
             sn.nextLine();
             addProductToSale(barcode, quantity, orderNo);
+            System.out.println("Press 0 to finalize sale, or any key to continue adding products");
+            if(sn.nextLine().equals("0")){
+                printSale(orderNo);
+                return;
+            }
         }
     }
 
