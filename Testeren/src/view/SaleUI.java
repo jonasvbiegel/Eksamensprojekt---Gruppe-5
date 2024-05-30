@@ -139,8 +139,6 @@ public class SaleUI {
     }
 
     public void findSale(){
-        double totalPrice = 0;
-        SaleController s = new SaleController();
         sn = new Scanner(System.in);
         System.out.println("Enter order number:");
         int orderNo = sn.nextInt();
