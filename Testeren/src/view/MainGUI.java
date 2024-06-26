@@ -14,6 +14,7 @@ public class MainGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	Test test = new Test();
 
 	/**
 	 * Launch the application.
@@ -56,6 +57,14 @@ public class MainGUI extends JFrame {
 		});
 		SaleButton.setBounds(21, 68, 392, 35);
 		contentPane.add(SaleButton);
+		
+		JButton btnGenerateTestData = new JButton("Generate Test Data");
+		btnGenerateTestData.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				test.generateTestData();
+			}
+		});
+		btnGenerateTestData.setBounds(21, 227, 151, 23);
+		contentPane.add(btnGenerateTestData);
 	}
-
 }
