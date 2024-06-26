@@ -34,6 +34,7 @@ public class SaleGUI extends JDialog {
 	private JTextField textFieldOrderNo;
 	private JLabel lblProductInfo;
 	private JLabel lblProductError;
+	private JLabel lblAddError;
 	
 	/**
 	 * Launch the application.
@@ -141,7 +142,7 @@ public class SaleGUI extends JDialog {
 		btnFindProduct.setBounds(111, 253, 107, 23);
 		contentPanel.add(btnFindProduct);
 		
-		JLabel lblQuantity = new JLabel("Quantity (opt):");
+		JLabel lblQuantity = new JLabel("Quantity:");
 		lblQuantity.setBounds(10, 222, 96, 20);
 		contentPanel.add(lblQuantity);
 		
@@ -160,6 +161,33 @@ public class SaleGUI extends JDialog {
 		contentPanel.add(lblOrderNo);
 		
 		JButton btnAddProduct = new JButton("Add Product");
+		btnAddProduct.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sc = new SaleController();
+				
+				String barcode = textFieldProduct.getText();
+				
+				if(textFieldQuantity.getText() == "") {
+					try {
+						sc.addProductToSale(barcode, 1, Integer.parseInt(textFieldOrderNo.getText()));
+					} catch(Exception e1) {
+						lblAddError.setText("A problem occurred");
+						return;
+					}
+					
+					lblAddError.setText("Product added");
+				}
+				
+				try {
+					sc.addProductToSale(barcode, Integer.parseInt(textFieldQuantity.getText()), orderNo);
+				} catch(Exception e1){
+					lblAddError.setText("A problem occurred");
+					return;
+				}
+				
+				lblAddError.setText("Product added");
+			}
+		});
 		btnAddProduct.setBounds(227, 253, 107, 23);
 		contentPanel.add(btnAddProduct);
 		
@@ -170,6 +198,10 @@ public class SaleGUI extends JDialog {
 		lblProductError = new JLabel("");
 		lblProductError.setBounds(228, 194, 48, 14);
 		contentPanel.add(lblProductError);
+		
+		lblAddError = new JLabel("");
+		lblAddError.setBounds(228, 225, 166, 14);
+		contentPanel.add(lblAddError);
 		
 		{
 			JPanel buttonPane = new JPanel();
