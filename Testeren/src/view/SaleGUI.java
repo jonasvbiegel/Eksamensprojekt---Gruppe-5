@@ -59,7 +59,7 @@ public class SaleGUI extends JDialog {
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		
-		JLabel lblCustomerNo = new JLabel("Customer No.:");
+		JLabel lblCustomerNo = new JLabel("Kunde Nr.:");
 		lblCustomerNo.setBounds(10, 8, 96, 20);
 		contentPanel.add(lblCustomerNo);
 		
@@ -68,7 +68,7 @@ public class SaleGUI extends JDialog {
 		contentPanel.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnFindCustomer = new JButton("Create Sale");
+		JButton btnFindCustomer = new JButton("Nyt Salg");
 		btnFindCustomer.setBounds(111, 61, 107, 23);
 		btnFindCustomer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -77,7 +77,7 @@ public class SaleGUI extends JDialog {
 				try {
 					cc.findCustomerByPhoneNo(textField.getText());
 				} catch(Exception e1) {
-					lblCustomerError.setText("Customer not found");
+					lblCustomerError.setText("Kunde blev ikke fundet");
 					return;
 				}
 				
@@ -85,7 +85,7 @@ public class SaleGUI extends JDialog {
 					Integer.valueOf(textFieldOrderNo.getText());
 				}
 				catch(Exception e1) {
-					lblCustomerError.setText("Invalid order number");
+					lblCustomerError.setText("Ugyldig ordre nr.");
 					return;
 				}
 				
@@ -95,7 +95,7 @@ public class SaleGUI extends JDialog {
 				sc.createSale(orderNo, customerNo, "111");
 				
 				lblCustomerError.setText("");
-				lblCustomerInfo.setText("Sale created for " + cc.findCustomerByPhoneNo(customerNo).getName() + " with order number " + orderNo);
+				lblCustomerInfo.setText("Salget for " + cc.findCustomerByPhoneNo(customerNo).getName() + " med ordre nr. " + orderNo + " er blevet lavet");
 			}
 		});
 		contentPanel.add(btnFindCustomer);
@@ -108,7 +108,7 @@ public class SaleGUI extends JDialog {
 		lblCustomerInfo.setBounds(10, 95, 384, 14);
 		contentPanel.add(lblCustomerInfo);
 		
-		JLabel lblProductNo = new JLabel("Product No.:");
+		JLabel lblProductNo = new JLabel("Produkt Nr.:");
 		lblProductNo.setBounds(10, 191, 96, 20);
 		contentPanel.add(lblProductNo);
 		
@@ -117,7 +117,7 @@ public class SaleGUI extends JDialog {
 		textFieldProduct.setBounds(111, 191, 107, 20);
 		contentPanel.add(textFieldProduct);
 		
-		JButton btnFindProduct = new JButton("Find Product");
+		JButton btnFindProduct = new JButton("Find Produkt");
 		btnFindProduct.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				pc = new ProductController();
@@ -127,7 +127,7 @@ public class SaleGUI extends JDialog {
 				try {
 					pc.findProductByBarcode(barcode);
 				} catch(Exception e1) {
-					lblProductError.setText("Product not found");
+					lblProductError.setText("Produkt blev ikke fundet");
 					return;
 				}
 				
@@ -142,7 +142,7 @@ public class SaleGUI extends JDialog {
 		btnFindProduct.setBounds(111, 253, 107, 23);
 		contentPanel.add(btnFindProduct);
 		
-		JLabel lblQuantity = new JLabel("Quantity:");
+		JLabel lblQuantity = new JLabel("Antal:");
 		lblQuantity.setBounds(10, 222, 96, 20);
 		contentPanel.add(lblQuantity);
 		
@@ -156,11 +156,11 @@ public class SaleGUI extends JDialog {
 		textFieldOrderNo.setBounds(111, 34, 107, 20);
 		contentPanel.add(textFieldOrderNo);
 		
-		JLabel lblOrderNo = new JLabel("Order No.:");
+		JLabel lblOrderNo = new JLabel("Ordre Nr.:");
 		lblOrderNo.setBounds(10, 34, 96, 20);
 		contentPanel.add(lblOrderNo);
 		
-		JButton btnAddProduct = new JButton("Add Product");
+		JButton btnAddProduct = new JButton("Tilføj Produkt");
 		btnAddProduct.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				sc = new SaleController();
@@ -171,24 +171,24 @@ public class SaleGUI extends JDialog {
 					try {
 						sc.addProductToSale(barcode, 1, Integer.parseInt(textFieldOrderNo.getText()));
 					} catch(Exception e1) {
-						lblAddError.setText("A problem occurred");
+						lblAddError.setText("Et problem opstod");
 						return;
 					}
 					
-					lblAddError.setText("Product added");
+					lblAddError.setText("Produkt tilføjet");
 				}
 				
 				try {
 					sc.addProductToSale(barcode, Integer.parseInt(textFieldQuantity.getText()), orderNo);
 				} catch(Exception e1){
-					lblAddError.setText("A problem occurred");
+					lblAddError.setText("Et problem opstod");
 					return;
 				}
 				
-				lblAddError.setText("Product added");
+				lblAddError.setText("Produkt tilføjet");
 			}
 		});
-		btnAddProduct.setBounds(227, 253, 107, 23);
+		btnAddProduct.setBounds(227, 253, 110, 23);
 		contentPanel.add(btnAddProduct);
 		
 		lblProductInfo = new JLabel("");

@@ -48,7 +48,7 @@ public class MainGUI extends JFrame {
 		lblNewLabel.setBounds(21, 21, 129, 26);
 		contentPane.add(lblNewLabel);
 		
-		JButton SaleButton = new JButton("Create Sale");
+		JButton SaleButton = new JButton("Nyt Salg");
 		SaleButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SaleGUI s = new SaleGUI();
