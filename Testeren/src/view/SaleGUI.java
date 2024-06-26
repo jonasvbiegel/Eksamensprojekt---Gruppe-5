@@ -196,7 +196,7 @@ public class SaleGUI extends JDialog {
 		contentPanel.add(lblProductInfo);
 		
 		lblProductError = new JLabel("");
-		lblProductError.setBounds(228, 194, 48, 14);
+		lblProductError.setBounds(228, 194, 166, 14);
 		contentPanel.add(lblProductError);
 		
 		lblAddError = new JLabel("");
@@ -212,7 +212,8 @@ public class SaleGUI extends JDialog {
 				JButton okButton = new JButton("OK");
 				okButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						
+						setVisible(false);
+						dispose();
 					}
 				});
 				//okButton.setActionCommand("OK");
